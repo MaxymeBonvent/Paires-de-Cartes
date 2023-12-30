@@ -1,0 +1,357 @@
+/* CORPS DE LA PAGE */
+body{
+    /* Fond */
+    background-color: black;
+
+    /* Position des éléments internes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TITRES ET TEXTES */
+h1, h2, p{
+    /* Couleur */
+    color: white;
+}
+
+/* TITRES */
+h1, h2{
+    /* Centrage */
+    text-align: center;
+}
+
+/* TEXTES */
+p{
+    /* Taille */
+    font-size: 22px;
+}
+
+/* HEADER ET FOOTER */
+header, footer{
+    /* Contour */
+    border: 2px solid white;
+    border-radius: 20px;
+
+    /* Dimensions */
+    width: 90%;
+
+    /* Espace externe */
+    margin: 10px 0;
+
+    /* Position des éléments internes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN */
+main{
+    /* Contour */
+    border: 2px solid white;
+    border-radius: 20px;
+
+    /* Dimensions */
+    width: 90%;
+
+    /* Position des éléments internes */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DIV QUI CONTIENT LES CARTES */
+#div_cartes{
+    /* Dimensions */
+    width: 90%;
+    height: 120px;
+
+    /* Contour */
+    border: 2px solid white;
+    border-radius: 20px;
+
+    /* Texte */
+    color: white;
+    font-size: 22px;
+
+    /* Espace externe */
+    margin: 10px 0;
+
+    /* Position des éléments internes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARTE RÉVÉLÉE ET CACHÉE */
+.carte_révélée, .carte_cachée{
+    /* Dimensons */
+    width: 70px;
+    height: 70px;
+
+    /* Contour */
+    border: 2px solid white;
+    border-radius: 20px;
+
+    /* Espace externe */
+    margin: 0 10px;
+
+    /* Taille du texte */
+    font-size: 24px;
+    
+    /* Position des éléments internes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Durée de l'animation */
+    transition: 0.4s;
+}
+
+/* SURVOL DES CARTES RÉVÉLÉE ET CACHÉE */
+.carte_révélée:hover, .carte_cachée:hover{
+    /* Souris */
+    cursor: pointer;
+
+    /* Echelle */
+    transform: scale(1.1, 1.1);
+}
+
+/* CARTE RÉVÉLÉE */
+.carte_révélée{
+    /* Couleur du texte */
+    color: white;
+  }
+  
+  /* CARTE CACHÉE */
+  .carte_cachée{
+      /* Couleur du texte */
+      color: transparent;
+  }
+
+/* BOUTON REJOUER */
+button{
+    /* Taille du texte */
+    font-size: 22px;
+
+    /* Espace externe */
+    margin: 10px 0;
+
+    /* Durée de l'animation */
+    transition: 0.4s;
+}
+
+/* SURVOL DU BOUTON REJOUER */
+button:hover{
+    /* Souris */
+    cursor: pointer;
+    
+    /* Echelle */
+    transform: scale(1.1, 1.1);
+}
+ 
+
+/* VERSION TRÈS PETITE */
+@media all and (max-width:359px){
+    /* HEADER ET FOOTER */
+    header, footer{
+        /* Dimensions */
+        width: 100%;
+    }
+
+    /* TITRE H2 */
+    h2{
+        /* Taille */
+        font-size: 20px;
+    }
+
+    /* MAIN */
+    main{
+        /* Dimensions */
+        width: 100%;
+    }
+
+    /* DIV QUI CONTIENT LES CARTES */
+    #div_cartes{
+        /* Dimensions */
+        width: 90%;
+        height: 150px;
+
+        /* Position des éléments internes */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* CARTE RÉVÉLÉE ET CACHÉE */
+    .carte_révélée, .carte_cachée{
+        /* Dimensons */
+        width: 30px;
+        height: 30px;
+
+        /* Espace externe */
+        margin: 0 4px;
+
+        /* Contour */
+        border-radius: 10px;
+
+        /* Taille du texte */
+        font-size: 16px;
+    }
+
+    /* BOUTON REJOUER */
+    button{
+        /* Taille du texte */
+        font-size: 16px;
+    }
+}
+
+/* VERSION PETITE */
+@media all and (min-width:360px) and (max-width:767px){
+    /* HEADER ET FOOTER */
+    header, footer{
+        /* Dimensions */
+        width: 100%;
+    }
+
+    /* TITRE H2 */
+    h2{
+        /* Taille */
+        font-size: 20px;
+    }
+
+    /* MAIN */
+    main{
+        /* Dimensions */
+        width: 100%;
+    }
+
+    /* DIV QUI CONTIENT LES CARTES */
+    #div_cartes{
+        /* Dimensions */
+        width: 90%;
+        height: 150px;
+
+        /* Position des éléments internes */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* CARTE RÉVÉLÉE ET CACHÉE */
+    .carte_révélée, .carte_cachée{
+        /* Dimensons */
+        width: 30px;
+        height: 30px;
+
+        /* Espace externe */
+        margin: 0 14px;
+
+        /* Contour */
+        border-radius: 10px;
+
+        /* Taille du texte */
+        font-size: 18px;
+    }
+
+    /* BOUTON REJOUER */
+    button{
+        /* Taille du texte */
+        font-size: 18px;
+    }
+}
+
+/* VERSION MOYENNE */
+@media all and (min-width:768px) and (max-width:819px){
+    /* HEADER ET FOOTER */
+    header, footer{
+        /* Dimensions */
+        width: 80%;
+    }
+
+    /* TITRE H2 */
+    h2{
+        /* Taille */
+        font-size: 20px;
+    }
+
+    /* DIV QUI CONTIENT LES CARTES */
+    #div_cartes{
+        /* Dimensions */
+        width: 90%;
+        height: 150px;
+
+        /* Position des éléments internes */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* CARTE RÉVÉLÉE ET CACHÉE */
+    .carte_révélée, .carte_cachée{
+        /* Dimensons */
+        width: 40px;
+        height: 40px;
+
+        /* Espace externe */
+        margin: 0 35px;
+
+        /* Contour */
+        border-radius: 15px;
+
+        /* Taille du texte */
+        font-size: 22px;
+    }
+
+    /* BOUTON REJOUER */
+    button{
+        /* Taille du texte */
+        font-size: 18px;
+    }
+}
+
+/* VERSION GRANDE */
+@media all and (min-width:820px){
+    /* HEADER ET FOOTER */
+    header, footer{
+        /* Dimensions */
+        width: 90%;
+    }
+
+    /* TITRE H2 */
+    h2{
+        /* Taille */
+        font-size: 20px;
+    }
+
+    /* DIV QUI CONTIENT LES CARTES */
+    #div_cartes{
+        /* Dimensions */
+        width: 90%;
+        height: 150px;
+
+        /* Position des éléments internes */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* CARTE RÉVÉLÉE ET CACHÉE */
+    .carte_révélée, .carte_cachée{
+        /* Dimensons */
+        width: 40px;
+        height: 40px;
+
+        /* Espace externe */
+        margin: 0 35px;
+
+        /* Contour */
+        border-radius: 15px;
+
+        /* Taille du texte */
+        font-size: 22px;
+    }
+
+    /* BOUTON REJOUER */
+    button{
+        /* Taille du texte */
+        font-size: 18px;
+    }
+}

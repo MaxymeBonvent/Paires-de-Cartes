@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paires de cartes</title>
+    <link rel="stylesheet" href="paires_de_cartes.css">
+</head>
+
+<body onload="CréerCartes()">
+
+    <!-- HEADER -->
+    <header>
+        <!-- TITRE -->
+        <h1>Paires de cartes</h1>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- NOMBRE DE PARTIES -->
+        <h2>Nombre de parties : <span id="nb_parties"></span></h2>
+
+        <!-- DIV QUI CONTIENT LES CARTES -->
+        <div id="div_cartes"></div>
+
+        <!-- BOUTON REJOUER -->
+        <button onclick="Rejouer()">Rejouer</button>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; Maxyme Bonvent.</p>
+    </footer>
+
+    <script src="paires_de_cartes.js"></script>
+</body>
+</html>
